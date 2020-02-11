@@ -14,10 +14,7 @@
 	- `Learning Challenge`
 - Duration: 
 	- `3 days`
-- Deadline: 
-	- `7/01/20 16:00`
-- Team challenge : 
-	- `solo or 2 people`
+
 
 
 
