@@ -6,7 +6,6 @@
 
 ---
 
-![react](netflix.png)
 
 
 - Repository: 
