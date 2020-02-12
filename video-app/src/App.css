@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+background: #01d277;
+color: #081c24;
 }
 
 nav{
@@ -7,6 +9,13 @@ nav{
   justify-content: space-around;
   align-items: center;
   min-height:10vh;
-  background-color: darkslateblue;
-  color: antiquewhite;
+  background-color:#0e1521;
+  color:#01d277;
+}
+.nav-links{
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
 }
