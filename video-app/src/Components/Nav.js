@@ -11,20 +11,20 @@ const navStyle = {
   return (
     <div className="App">
     <nav>
-    <table>
+   
       
-        <td>
+       
           <img alt="app icon" width="50" src="primary-green-app.svg"/>
-        </td>
-        <td>
-          <h3>MovieDB</h3>
-        </td>
+        
+        
+          
       
-    </table>
+      
+   
         
           <ul className="nav-links">
-            <Link style={navStyle} to='/about'>
-              <li>About</li>
+            <Link style={navStyle} to='/home'>
+              <li>Home</li>
             </Link>
             <Link style={navStyle} to='/card'>
               <li>Movies</li>
