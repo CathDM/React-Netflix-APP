@@ -1,5 +1,5 @@
 
-import React, {useState, useEffect} from 'react';
+import React  from 'react';
 
 import '../App.css';
 // */--SAMPLE URLS
@@ -19,27 +19,19 @@ import '../App.css';
 
 
 
-function Card() {
 
-  useEffect(() => {
-    fetchItems();
-  },[]);
+function Movie() {
 
-  const [items, setItems] = useState([]);
-  
-  const fetchItems = async () => {
-    const data = await fetch(
-      'https://api.themoviedb.org/3/configuration?api_key=b1a68b4eb2cb080ad3ce165754970454'
-      );
-    const items = await data.json();
-    console.log(items);
-    setItems(items.images)
-  }
+   
   return (
     <div className="App">
-    <h1>Card</h1>
+    
+    <h1>Movie</h1>
     </div>
   );
 }
+ 
+  
 
-export default Card;
+
+export default Movie;
