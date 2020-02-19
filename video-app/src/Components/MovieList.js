@@ -8,14 +8,13 @@ const MovieList=(props)=>{
         <div className="container">
             <div className="row">
                 <div className="col s12">
-                {
-           props.movies.map(
+                
+                {props.movies.map(
                (movie, i) => {
                    return(
                     <Movie key={i}v image={movie.poster_path}/>
                    )}
-                        )
-                }
+                        )}
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@ import Search from './Components/Search';
    handleSubmit = (e) =>{
      e.preventDefault();
      //set a request to the moviedb api
-     fetch('https://api.themoviedb.org/3/search/movie?api_key=b1a68b4eb2cb080ad3ce165754970454&query=${this.state.searchTerm}')
+     fetch('https://api.themoviedb.org/3/search/movie?api_key=b1a68b4eb2cb080ad3ce165754970454&query=${this.state.searchTerm}&language=en-US&page=1&include_adult=false')
      .then(data => data.json())
      .then(data =>{
        console.log(data);
@@ -34,6 +34,7 @@ import Search from './Components/Search';
      this.setState({searchTerm: e.target.value})
    }
    render(){
+
     return (
       <div className="App">
       <Nav></Nav>
