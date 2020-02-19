@@ -1,4 +1,3 @@
-
 import React  from 'react';
 
 import '../App.css';
@@ -14,24 +13,16 @@ import '../App.css';
 // https://api.themoviedb.org/3/movie/<movie-id>?api_key=b1a68b4eb2cb080ad3ce165754970454
 // *************/
 
-
-
-
-
-
-
-function Movie() {
-
-   
-  return (
-    <div className="App">
-    
-    <h1>Movie</h1>
+const Movie = (props) =>{
+  return(
+    <div className="col s12 m6 l3">
+<div className="card">
+  <div className="card-image waves-effect waves-block waves-light"></div>
+</div>
     </div>
   );
-}
- 
-  
 
+}
 
 export default Movie;
+

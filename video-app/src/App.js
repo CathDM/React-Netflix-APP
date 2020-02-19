@@ -4,7 +4,7 @@ import Nav from './Components/Nav';
 import MovieList from './Components/MovieList'
 //import Home from './View/Home';
 
-import Movie from './Components/MovieCard';
+
 
 import Search from './Components/Search';
 //import { Component } from 'react';
@@ -18,7 +18,7 @@ import Search from './Components/Search';
        searchTerm:""
      }
      //set a property for api created in a seperate .env file
-     this.apiKey = process.env.REACT_APP_API
+    //this.apiKey = process.env.REACT_API_KEY
    }
    handleSubmit = (e) =>{
      e.preventDefault();
@@ -37,14 +37,13 @@ import Search from './Components/Search';
     return (
       <div className="App">
       <Nav></Nav>
-      <MovieList/>
-      <Movie></Movie>
-      <Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}></Search>
+      <Search handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>
+      {/*set a prop for movielist*/}
+      <MovieList movies={this.state.movies}/>
+  
       </div>
     );
    }
- 
-
  }
  
 
