@@ -7,7 +7,7 @@ import MovieList from './Components/MovieList'
 
 
 import Search from './Components/Search';
-//import { Component } from 'react';
+
 
     
  class App extends Component {
@@ -20,6 +20,9 @@ import Search from './Components/Search';
      //set a property for api created in a seperate .env file
     //this.apiKey = process.env.REACT_API_KEY
    }
+   //test with working api (most popular)
+   //follow docs at https://www.themoviedb.org/talk/5e455d020c2710001585a9a1
+   //https://api.themoviedb.org/3/discover/movie?api_key=b1a68b4eb2cb080ad3ce165754970454&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&title=Parasite
    handleSubmit = (e) =>{
      e.preventDefault();
      //set a request to the moviedb api
